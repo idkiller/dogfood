@@ -1,42 +1,122 @@
+* {
+    margin:0;
+    padding:0;
+}
+
 body {
     font-family: 'Verdana', sans-serif;
-    margin: 50px 25px;
+    color: #666;
+    font-size:100%;
 }
 
-a {
-    color: #2a99b6;
+header a {
+    color: #368;
 }
 
-a:hover {
-    color: #33bbdf;
+header a:hover {
+    background:#368;
+    color: #fff;
+    text-decoration:none;
 }
 
-header, footer, div.page {
-    width: 760px;
+header, div.page {
     margin: 0 auto;
-    background: #daeef3;
     padding: 20px 30px;
+    background:#e4e4e4;
+}
+header {
+    border-bottom:1px dashed #787878;
+    -moz-box-shadow: 1px  2px 6px #ddd;
+    -webkit-box-shadow: 1px 2px 6px #ddd;
+    box-shadow:1px 2px 6px #ddd;
 }
 
-header h1 {
+footer {
+    padding:10px 0 50px 0;
+    margin-top:20px;
+    font-size:.8em;
+    border-top: 1px solid #ddd;
+}
+
+header > h1 {
     color: #169bbd;
-    margin: 0;
+    margin: 0 0 0.8em 0;
     font-weight: normal;
-    font-size: 42px;
+    font-size: 22px;
 }
 
-header nav ul {
+header nav .nav {
     list-style: none;
     margin: 0;
     padding: 0;
 }
 
-header nav ul li {
+header nav .nav > li {
     display: inline;
     margin: 0 8px 0 0;
     padding: 0;
 }
 
+header nav .nav > li a {
+    text-decoration:none;
+    padding:.5em .6em;
+    padding:.5em .6em;
+    text-transform:uppercase;
+    text-decoration:none;
+    color:#787878;
+    -moz-border-radius:.3em;
+    -webkit-border-radius:.3em;
+    border-radius:.3em;
+    font-size:.8em;
+}
+
+header nav .nav > li a:hover {
+    background: #368;
+    color:#fff;
+}
+
+header nav .nav > .active a {
+    background: #fff;
+    color:#000;
+}
+
+
 div.page {
-    background: #f1fbfe;
+    background: #fff;
+}
+
+div.blog-post {
+    border-bottom:1px solid #ddd;
+}
+
+div.pagination {
+    clear:both;
+    text-align:center;
+    line-height:2.5em;
+    font-size:.9em;
+    padding-bottom:30px;
+}
+
+div.pagination a {
+    background:#f4f4f4;
+    border-right:1px solid #ddd;
+    border-bottom:1px solid #ddd;
+    padding:.3em .5em;
+    margin:0 .1em;
+    text-decoration:none;
+}
+
+div.pagination a:hover {
+    background:#368 !important;
+    color:#fff;
+}
+
+div.pagination > span.thispage {
+    color:#368;
+    padding:.3em .5em;
+    margin:0 .1em;
+    font-weight:bold;
+}
+
+div.pagination > span.disabled {
 }
