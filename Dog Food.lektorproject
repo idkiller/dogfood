@@ -1,2 +1,5 @@
 [project]
 name = Dog Food
+
+[servers.ghpages]
+target = ghpages+https://idkiller/dogfood.git
