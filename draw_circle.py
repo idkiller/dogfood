@@ -14,7 +14,7 @@ ctx = cairo.Context (surface)
 ctx.scale (WIDTH, HEIGHT) # Normalizing the canvas
 
 ctx.rectangle(0, 0, 1, 1)
-ctx.set_source_rgb(0.1, 0.1, 0.1)
+ctx.set_source_rgb(0, 0, 0)
 ctx.fill()
 
 #ctx.translate (0.1, 0.1) # Changing the current transformation matrix
